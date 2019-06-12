@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.ravenchat.UserProfile">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/user_update_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@android:color/black"
+        app:titleTextColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/user_edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="@string/contrase_a_anterior"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="40"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/user_edtNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="@string/nueva_contrase_a"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/user_edtFullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="@string/editar_nombre_completo"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/user_edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="@string/agregar_email"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/user_edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="@string/numero_telefono"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true" />
+
+    </LinearLayout>
+
+    <!--Cac Nut-->
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Button Signin-->
+        <Button
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:id="@+id/user_btnCancel"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:text="@string/cancelar"
+            android:layout_marginEnd="5dp"
+            android:layout_width="0dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:id="@+id/user_btnUpdate"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:text="@string/actualizar"
+            android:layout_marginStart="5dp"
+            android:layout_width="0dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.ravenchat.MainActivity">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:src="@mipmap/ravenblanco"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:layout_below="@+id/image_logo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/txtSlogan"
+        android:text="@string/raven_chat"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_margin="50dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/txtSlogan"
+        android:id="@+id/group_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/main_edtUsername"
+            android:hint="@string/usuario"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold|italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:inputType="text"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/main_edtPassword"
+            android:hint="@string/contrase_a"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold|italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:inputType="textPassword"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:id="@+id/main_btnSignUp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:text="@string/registrarse"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content" />
+
+        <!--Button Signin-->
+        <Button
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:id="@+id/main_btnSignIn"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:text="@string/iniciar_sesion"
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

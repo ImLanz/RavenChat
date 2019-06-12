@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context="com.ravenchat.SignUpActivity">
+
+    <!--Sign Up Form-->
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:src="@mipmap/ravenblanco"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:layout_below="@+id/image_logo"
+        android:layout_gravity="center"
+        android:id="@+id/txtSlogan"
+        android:text="@string/raven_chat"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_centerInParent="true">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/signup_edtFullname"
+            android:hint="@string/nombre_completo"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold|italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:inputType="text"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="40"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/signup_edtUsername"
+            android:hint="@string/usuario"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold|italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:inputType="text"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/signup_edtPassword"
+            android:hint="@string/contrase_a"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold|italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:inputType="textPassword"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"/>
+
+    </LinearLayout>
+
+    <!--Cac Nut-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!--Button Signin-->
+
+        <Button
+            android:id="@+id/signup_btnCancel"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/cancelar"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/signup_btnSignUp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/registrarse"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
